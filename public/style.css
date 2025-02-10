@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%; 
+  max-width: 600px; 
+  margin: 20px; 
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 600px; 
+  overflow-y: auto; 
+}
+
+.gym {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  word-wrap: break-word; 
+}
+
+
+/* media queries to adjust the layout for smaller screens*/
+ @media (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+#results::-webkit-scrollbar {
+  width: 8px;
+}
+
+#results::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#results::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#results::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
