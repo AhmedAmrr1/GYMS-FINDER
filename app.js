@@ -6,11 +6,13 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT;
 
-// Health check endpoint
-app.get('/', (req, res) => {
-  res.send('Gym Search API is running!');
-});
+// Serve static files from the "public" directory
+app.use(express.static('./public'));
 
+ app.get('/', (req, res) => {
+  res.sendFile('/public/index.html'); // Serve the HTML file
+});
+ 
 // Middleware for JSON parsing
 app.use(express.json());
 
